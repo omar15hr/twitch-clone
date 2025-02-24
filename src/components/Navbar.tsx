@@ -3,7 +3,7 @@ import "./Navbar.css";
 
 export function Navbar() {
   return (
-    <nav className="navbar flex flex-row w-full h-[50px] bg-[#18181b] p-2 items-center justify-between text-white">
+    <nav className="navbar flex flex-row w-full h-[50px] bg-[#18181b] p-2 items-center justify-between text-white ">
       <div className="flex items-center gap-3">
         <div className="flex items-center gap-1.5">
           <TwitchIcon size={28} />
