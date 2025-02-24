@@ -1,4 +1,4 @@
-import { CrownIcon, OptionsIcon, SearchIcon, TwitchIcon } from "./Icons";
+import { AvatarIcon, CrownIcon, OptionsIcon, SearchIcon, TwitchIcon } from "./Icons";
 import "./Navbar.css";
 
 export function Navbar() {
@@ -27,18 +27,24 @@ export function Navbar() {
         </button>
       </div>
 
-      <div className="flex flex-row items-center gap-2">
-        <div className="flex flex-col">
-          <span 
-            className="flex items-center justify-center text-xs bg-red-500 p-.5 px-1.5 rounded-lg"
-          >
+      <div className="flex flex-row items-center gap-3">
+        <div className="relative w-fit self-end">
+          <span className="absolute -top-3 -right-2 flex items-center justify-center text-xs bg-red-500 text-white px-1.5 py-0.5 rounded-full">
             63
           </span>
+
           <CrownIcon size={24} />
         </div>
-        
-        <div>
-          <button className="button">Log In</button>
+
+        <div className="flex gap-3">
+          <button className="bg-[#53535F61] button p-1 w-[60px]">Log In</button>
+          <button className="bg-[#199AFC] button p-1 w-[80px]">
+            Sign Up
+          </button>
+        </div>
+
+        <div className="pl-1">
+          <AvatarIcon size={24} />
         </div>
       </div>
     </nav>
